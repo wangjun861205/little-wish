@@ -4,7 +4,7 @@ export type Child = {
     family_id: number,
 }
 
-export const queryChildren = async (limit: number, offset: number): Promise<Child[] | string> => {
+export const queryChildren = async (limit: number, offset: number): Promise<Child[]> => {
     return [
         {
             id: 1,

@@ -1,11 +1,14 @@
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import { Task } from "../apis/task";
 import { Row, View, Text, Button, Alert } from "native-base";
-import { RootStackParamList } from "../page-groups/task";
+import { TaskPageGroupParamList } from "../page-groups/task";
 import { startTask } from "../apis/task";
 import { useState } from "react";
 
-type TaskDetailProps = NativeStackScreenProps<RootStackParamList, "TaskDetail">;
+type TaskDetailProps = NativeStackScreenProps<
+  TaskPageGroupParamList,
+  "TaskDetail"
+>;
 
 const TaskDetail = ({ navigation, route }: TaskDetailProps) => {
   const task = route.params?.task;

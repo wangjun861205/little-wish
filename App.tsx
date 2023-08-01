@@ -35,6 +35,11 @@ const TabScreens = () => {
   );
 };
 
+export type RootStackParamList = {
+  Login: undefined;
+  TabScreens: undefined;
+};
+
 export default function App() {
   return (
     <QueryClientProvider client={new QueryClient()}>

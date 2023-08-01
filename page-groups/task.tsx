@@ -3,11 +3,12 @@ import TaskList from "../pages/task-list";
 import TaskDetail from "../pages/task-detail";
 import { Task } from "../apis/task";
 
-export type RootStackParamList = {
+export type TaskPageGroupParamList = {
   TaskList: undefined;
   TaskDetail: { task: Task };
+  CreateTask: undefined;
 };
-const Stack = createNativeStackNavigator<RootStackParamList>();
+const Stack = createNativeStackNavigator<TaskPageGroupParamList>();
 
 const TaskPageGroup = () => {
   return (
